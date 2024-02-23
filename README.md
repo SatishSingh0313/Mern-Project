@@ -1,2 +1,1 @@
-# Mern-Project
-Mern Project Description
+Mern Project Description.
