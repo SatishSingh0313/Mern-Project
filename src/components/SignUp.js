@@ -39,7 +39,7 @@ const SignUp=()=>{
             <input className="inpurBox" type="text" value={name} onChange={(e)=>setName(e.target.value)} placeholder="Enter Name"/>
             <input className="inpurBox" type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Enter Email"/>
             <input className="inpurBox"type="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Enter Password"/>
-            <button type="button" onClick={CollectData}>Sign Up</button>
+            <button className="btn" type="button" onClick={CollectData}>Sign Up</button>
         </div>
     )
 }

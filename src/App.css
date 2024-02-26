@@ -24,7 +24,35 @@
   width: 300px;
   margin-left: 40%;
 }
+.btn{
+  width: 15%;
+  margin: 7px;
+ padding: 7px;
+ 
+  
+}
 
+.logo{
+ width: 40px;
+ height: 50px;
+ float: left;
+ border-radius: 50%;
+ margin-top: 3px;
+ margin-left: 10px;
+}
+.invalid-input{
+  color: red;
+}
+
+.product-list ul li{
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid skyblue;
+  width: 100px;
+}
+.product-list ul{
+ margin: 0;
+}
 
 .App {
   text-align: center;
