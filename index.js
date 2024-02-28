@@ -114,7 +114,7 @@ function verifyToken(req, resp, next) {
             } else {
                 next();
             }
-        })
+        });
     } else {
         resp.status(403).send({result:"Please add token with header"})
     }
