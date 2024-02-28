@@ -53,6 +53,11 @@
 .product-list ul{
  margin: -2px;
 }
+.search-product-box{
+  margin: 10px;
+  padding: 7px;
+  width: 300px;
+}
 
 .App {
   text-align: center;

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "react-router-dom";
 
-const ProdcutList = () => {
+const ViewProduct = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -19,19 +18,7 @@ const ProdcutList = () => {
         setProducts(result);
 
     }
-    const deleteProduct = async(id)=>{
-       let  result=await fetch(`http://localhost:5000/product/${id}`,{
-        method:'Delete',
-        headers:{
-            authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
-
-        }
-       });
-       result=await result.json()
-       if(result){
-       getProducts();
-       }
-    };
+    
 
     const searchHandle=async(e)=>{
         let key=e.target.value;
@@ -54,7 +41,7 @@ const ProdcutList = () => {
    
     return (
         <div className="product-list">
-            <h1>Product List With Operation</h1>
+            <h1>Product List </h1>
             <input className="search-product-box" type="text" placeholder="Search Product"
             onChange={searchHandle} />
             <ul>
@@ -63,7 +50,7 @@ const ProdcutList = () => {
                 <li>Price</li>
                 <li>Category</li>
                 <li>Company</li>
-                <li>Operation</li>
+                
             </ul>
 
             {
@@ -74,9 +61,7 @@ const ProdcutList = () => {
                         <li>{item.price}</li>
                         <li>{item.category}</li>
                         <li>{item.company}</li>
-                        <li><button onClick={()=>deleteProduct(item._id)}>Delete</button>
-                        <Link to={"/update/"+item._id}>Update</Link>
-                        </li>
+                        
                         
                     </ul>
                 ) 
@@ -85,4 +70,4 @@ const ProdcutList = () => {
         </div>
     )
 }
-export default ProdcutList
+export default ViewProduct;
