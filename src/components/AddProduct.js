@@ -31,7 +31,7 @@ const AddProduct = () => {
 
     }
     return (
-        <div className="">
+        <div className="add-product">
             <h1>Add Your Product </h1>
             <input className="inpurBox" type="" text placeholder="Enter Product Name"
                 value={name} onChange={(e) => { setName(e.target.value) }} />

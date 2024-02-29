@@ -1,6 +1,12 @@
+*{
+  background-color: rgb(218, 222, 226);
+}
 .nav-ul li{
   display: inline-block;
   padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  
 }
 .footer{
   position: absolute;
@@ -14,9 +20,11 @@
   padding: 5px;
   margin-top: 0px;
   text-decoration: none;
-  background-color: antiquewhite;
+  background-color: rgb(54, 106, 151);
+  
 
 }
+
 .inpurBox{
   margin: 7px;
   display: block;
@@ -37,8 +45,10 @@
  height: 50px;
  float: left;
  border-radius: 50%;
- margin-top: 3px;
+ margin-top: 2px;
  margin-left: 10px;
+ margin-right: 5px;
+ 
 }
 .invalid-input{
   color: red;
@@ -49,6 +59,9 @@
   padding: 5px;
   border: 1px solid skyblue;
   width: 150px;
+  text-align: center;
+  background-color:azure;
+  
 }
 .product-list ul{
  margin: -2px;
@@ -57,10 +70,34 @@
   margin: 10px;
   padding: 7px;
   width: 300px;
+  text-align: center;
+  background-color: white;
 }
+.signup{
+  text-align: center;
+}
+.login{
+  text-align: center;
+}
+.product-list{
+  text-align: center;
+}
+.add-product{
+  text-align: center;
+
+}
+.show-heading{
+  color:cornflowerblue;
+  
+}
+.user-profile{
+  text-align: center;
+}
+
 
 .App {
   text-align: center;
+  
 }
 
 .App-logo {

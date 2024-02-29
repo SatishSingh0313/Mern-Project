@@ -44,7 +44,7 @@ const ViewProduct = () => {
             <h1>Product List </h1>
             <input className="search-product-box" type="text" placeholder="Search Product"
             onChange={searchHandle} />
-            <ul>
+            <ul className="show-heading">
                 <li>S.No</li>
                 <li>Name</li>
                 <li>Price</li>
@@ -61,9 +61,10 @@ const ViewProduct = () => {
                         <li>{item.price}</li>
                         <li>{item.category}</li>
                         <li>{item.company}</li>
+                       {/* <li className="product-logo"><img alt='' src={shop}/></li> */}
                         
                         
-                    </ul>
+                    </ul>   
                 ) 
                 : <h1>No Result Found</h1>
             }

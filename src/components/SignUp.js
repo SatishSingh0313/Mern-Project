@@ -35,7 +35,7 @@ const SignUp=()=>{
     }
 
     return(
-        <div>
+        <div className="signup">
             <h1>Register</h1>
             <input className="inpurBox" type="text" value={name} onChange={(e)=>setName(e.target.value)} placeholder="Enter Name"/>
             <input className="inpurBox" type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Enter Email"/>

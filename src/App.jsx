@@ -9,10 +9,11 @@ import AddProduct from './components/AddProduct';
 import ProdcutList from './components/ProductList';
 import UpdateProduct from './components/UpdateProduct';
 import ViewProduct from './components/ViewProduct';
+import Profile from './components/Profile';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
     <BrowserRouter>
      <Nav/>
 
@@ -24,8 +25,8 @@ function App() {
       <Route path="/list" element={<ProdcutList/>}></Route>
       <Route path="/add" element= {<AddProduct/>} ></Route>
       <Route path="/update/:id" element={<UpdateProduct/>}></Route>
-      <Route path="/logout" element={<h1> Logout Component</h1>}></Route>
-      <Route path="/profile" element={<h1> Profile Product Component</h1>}></Route>
+      {/* <Route path="/logout" element={<h1> Logout Component</h1>}></Route> */}
+      <Route path="/profile" element={<Profile/>}></Route>
       </Route>
 
       <Route path="/signup" element={<SignUp/>}></Route>

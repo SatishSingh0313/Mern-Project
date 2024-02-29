@@ -9,6 +9,7 @@ const Nav = () => {
         localStorage.clear();
         navigate('signup')
     }
+   
     return (
         <div>
             <img src={shop} alt="logo" className="logo" />
@@ -17,7 +18,7 @@ const Nav = () => {
                 <li><Link to="/add">Add Product</Link></li>
                 <li><Link to="/list">Update Products</Link></li>
                 <li><Link to="/profile">Profile </Link></li>
-                <li><Link onClick={logout} to="/signup">Logout ({JSON.parse(auth).name})</Link></li>
+                <li ><Link onClick={logout} to="/signup">Logout ({JSON.parse(auth).name})</Link></li>
             </ul>
                 :
                 <ul className='nav-ul'>

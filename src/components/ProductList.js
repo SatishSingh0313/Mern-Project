@@ -7,7 +7,7 @@ const ProdcutList = () => {
     useEffect(() => {
         getProducts();
     }, [])
-
+    
     const getProducts = async () => {
         let result = await fetch('http://localhost:5000/products',{
             headers:{
@@ -57,7 +57,7 @@ const ProdcutList = () => {
             <h1>Product List With Operation</h1>
             <input className="search-product-box" type="text" placeholder="Search Product"
             onChange={searchHandle} />
-            <ul>
+            <ul className="show-heading">
                 <li>S.No</li>
                 <li>Name</li>
                 <li>Price</li>
