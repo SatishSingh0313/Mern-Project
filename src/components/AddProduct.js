@@ -30,6 +30,7 @@ const AddProduct = () => {
         console.log(userId);
 
     }
+    
     return (
         <div className="add-product">
             <h1>Add Your Product </h1>
