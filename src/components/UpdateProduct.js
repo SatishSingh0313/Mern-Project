@@ -49,7 +49,7 @@ const UpdateProduct = () => {
     }
 
     return (
-        <div className="">
+        <div className="add-product">
             <h1>Product Update </h1>
             <input className="inpurBox" type="text" text placeholder="Enter Product Name"
                 value={name} onChange={(e) => { setName(e.target.value) }} />
